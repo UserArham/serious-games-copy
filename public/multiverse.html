@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Mr.Dude Multiverse</title>
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
-        iframe { position: absolute; inset: 0; width: 100vw; height: 100vh; border: none; }
-    </style>
-</head>
-<body>
-    <!-- Points to Vercel Proxy to kill SAMEORIGIN -->
-    <iframe id="g" src="/multiverse-logic/index.html" allow="autoplay; fullscreen; keyboard; gamepad" allowfullscreen></iframe>
-    <script>const g = document.getElementById('g'); window.onclick = () => g.focus();</script>
+<head><title>Mr. Dude: Multiverse</title></head>
+<body style="margin:0;overflow:hidden;background:#000;">
+    <!-- THIS IS THE GAME. IT PULLS FROM THE PROXY IN VERCEL.JSON -->
+    <iframe src="/multiverse-logic/index.html" style="width:100vw;height:100vh;border:none;" allowfullscreen></iframe>
 </body>
 </html>
