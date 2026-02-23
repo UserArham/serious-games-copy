@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { 
+      "source": "/multiverse-logic/:path*", 
+      "destination": "https://app-369894.games.s3.yandex.net*" 
+    },
+    { 
+      "source": "/king-logic/:path*", 
+      "destination": "https://app-262814.games.s3.yandex.net*" 
+    }
+  ]
+}
