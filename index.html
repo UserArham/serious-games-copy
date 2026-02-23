@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>serious games</title>
+    <style>
+        body { 
+            margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; 
+            background: radial-gradient(circle, #1a1a1a 0%, #000 100%); font-family: 'Segoe UI', sans-serif; 
+        }
+        .container { text-align: center; display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+        
+        .play-card {
+            width: 280px; padding: 40px; background: rgba(255, 255, 255, 0.05); 
+            border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px;
+            backdrop-filter: blur(10px); transition: 0.3s; cursor: pointer; text-decoration: none;
+        }
+        .play-card:hover { transform: translateY(-10px); border-color: #5641FF; background: rgba(86, 65, 255, 0.1); }
+        
+        .play-card h2 { color: #fff; margin: 0 0 15px 0; font-size: 1.2rem; letter-spacing: 1px; }
+        
+        .btn {
+            display: inline-block; padding: 12px 30px; background: #5641FF; color: #fff; 
+            border-radius: 50px; font-weight: bold; text-transform: uppercase; font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- REDIRECTS TO MULTIVERSE -->
+        <a href="/multiverse" class="play-card">
+            <h2>ONLINE MULTIVERSE</h2>
+            <div class="btn">PLAY NOW</div>
+        </a>
+
+        <!-- REDIRECTS TO KING OF THE HILL -->
+        <a href="/king" class="play-card">
+            <h2>KING OF THE HILL</h2>
+            <div class="btn">PLAY NOW</div>
+        </a>
+    </div>
+</body>
+</html>
